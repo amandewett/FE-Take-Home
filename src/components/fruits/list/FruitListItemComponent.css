@@ -1,0 +1,35 @@
+.fruit-list-item-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+    font-size: 1.2rem;
+    background-color: var(--app-gradient-two);
+    border-radius: var(--app-border-radius);
+    box-shadow: 1px 1px 0.8px var(--app-primary);
+    transition: transform 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
+}
+
+.fruit-list-item-container:hover {
+    box-shadow: 4px 4px 0.8px var(--app-primary);
+    transform: scale(1.01);
+}
+
+.fruit-list-item-container h6 {
+    margin-left: 0.5rem;
+    filter: brightness(70%);
+}
+
+.fruit-list-item-container button {
+    margin-left: auto;
+    font-size: large;
+    padding: 10px;
+    padding-inline: 20px;
+    cursor: pointer;
+    border-radius: var(--app-border-radius);
+    background: var(--app-black);
+    border-color: transparent;
+    color: var(--app-primary);
+}

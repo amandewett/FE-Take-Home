@@ -1,0 +1,21 @@
+.collap-container {
+    margin: 20px;
+}
+
+#collap-header {
+    background-color: var(--app-primary);
+    color: var(--app-black);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: var(--app-border-radius);
+}
+
+#collap-header span {
+    font-size: 1.4rem;
+}
+
+.collap-list {
+    margin-left: 1rem;
+}

@@ -1,0 +1,53 @@
+.fruit-group-by-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.fruit-group-by-container label {
+    font-size: 2rem;
+    font-weight: bolder;
+    margin-bottom: 0.5rem;
+}
+
+.fruit-group-by-container select {
+    font-size: 1rem;
+    border-radius: var(--app-border-radius);
+    padding: 0.2rem;
+    background-color: var(--app-black);
+    border-color: var(--app-primary);
+    outline: none;
+    color: var(--app-text-color);
+}
+
+.fruit-group-by-container select option {
+    font-size: 1rem;
+    border-radius: var(--app-border-radius);
+    padding: 0.2rem;
+    background-color: var(--app-black);
+    border-color: var(--app-text-color);
+    color: var(--app-text-color);
+}
+
+.fruit-group-by-container select option:hover {
+    background-color: var(--app-primary);
+    border-color: var(--app-primary);
+    color: var(--app-primary);
+}
+
+#fruit-list-container {
+    flex-basis: 50%;
+}
+
+.fruit-list {
+    height: 80vh;
+    overflow-y: scroll;
+    margin-top: 20px;
+}
+
+.fruit-table {
+    height: 80vh;
+    overflow-y: scroll;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}

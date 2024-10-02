@@ -1,0 +1,58 @@
+.jar-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2em;
+    align-items: center;
+    justify-content: center;
+    flex-basis: 50%;
+
+}
+
+.jar-container ol {
+    width: 90%;
+    margin-top: 2rem;
+    align-self: flex-start;
+    height: 60vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+.jar-list-item-container {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding: 10px;
+    margin: 10px;
+    font-size: 1.2rem;
+    background-color: var(--app-gradient-two);
+    border-radius: var(--app-border-radius);
+    box-shadow: 1px 1px 0.8px var(--app-primary);
+    transition: transform 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
+}
+
+.jar-list-item-container:hover {
+    box-shadow: 4px 4px 0.8px var(--app-primary);
+    transform: scale(1.01);
+}
+
+.jar-list-item-container h6 {
+    margin-top: 1rem;
+    font-size: 1rem;
+    filter: brightness(70%);
+}
+
+.pie-chart {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    align-self: flex-center;
+    margin: 0;
+    padding: 0;
+}

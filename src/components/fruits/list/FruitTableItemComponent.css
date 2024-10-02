@@ -1,0 +1,72 @@
+.fruit-table-item-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    padding: 10px;
+    margin: 20px;
+    font-size: 1.5rem;
+    background-color: var(--app-gradient-two);
+    border-radius: var(--app-border-radius);
+    transition: transform 0.3s ease-in-out;
+}
+
+.fruit-table-item-container:hover {
+    transform: translateX(-0.3em);
+}
+
+.fruit-table-item-container h6 {
+    margin-left: 0.5rem;
+    filter: brightness(70%);
+}
+
+table {
+    position: relative;
+    border-collapse: collapse;
+    border-radius: var(--app-border-radius);
+    overflow: hidden;
+    margin: 15px;
+}
+
+thead {
+    th {
+        background-color: var(--app-primary);
+        color: var(--app-black);
+        padding: 15px;
+        text-align: start;
+        font-weight: bolder;
+        font-size: larger;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+    }
+}
+
+tbody tr td {
+    background-color: var(--app-gradient-two);
+    padding: 10px;
+    text-align: start;
+}
+
+table tbody tr:nth-child(even) td {
+    background-color: var(--app-gradient-one);
+}
+
+table tbody tr:hover td {
+    transition: background-color 0.2s ease-in-out, transform 0.2s ease-in-out;
+    color: var(--app-primary);
+}
+
+td button {
+    margin-left: auto;
+    font-size: large;
+    padding: 10px;
+    padding-inline: 20px;
+    background-color: var(--app-primary);
+    border-radius: var(--app-border-radius);
+    outline: none;
+    border: none;
+    cursor: pointer;
+    color: var(--app-gradient-one);
+    transition: transform 0.2s ease;
+}
