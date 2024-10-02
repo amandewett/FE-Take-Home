@@ -18,7 +18,7 @@ const FruitListContainerComponent = () => {
     isError,
   } = useQuery({
     queryKey: ["fruitsList"],
-    queryFn: ({ signal }) => axiosInstance.get(`/fruit/all`, { signal: signal }),
+    queryFn: ({ signal }) => axiosInstance.get(`/api/fruits`, { signal: signal }),
   });
 
   const onGroupByChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
